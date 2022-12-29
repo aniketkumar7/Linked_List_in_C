@@ -75,7 +75,7 @@ void insertspeific(void)
         ptr->next = new;
     }
 }
-// delete form beginning of linked list
+// delete from beginning of linked list
 
 void deletebeginning(void)
 {
