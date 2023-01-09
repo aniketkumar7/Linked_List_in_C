@@ -1,3 +1,5 @@
+//This is a C program to implement Simple Linked List
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <process.h>
