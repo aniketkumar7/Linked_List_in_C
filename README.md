@@ -1,3 +1,3 @@
  # Implementation of Linked List in C Language
 
-This contains a C Program of implementation Simple Linked List. 
+This repository contains a C Program of implementation of Simple Linked List. 
