@@ -1,3 +1,3 @@
- # Linked_List_in_C
+ # Linked List in C
 
 This contains a C Program of implementation Simple Linked List. 
