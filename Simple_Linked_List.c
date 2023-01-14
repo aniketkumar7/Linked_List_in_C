@@ -1,4 +1,4 @@
-//This is a C program to implement Simple Linked List
+//This is a C program of implementation of Simple Linked List
 
 #include <stdio.h>
 #include <stdlib.h>
