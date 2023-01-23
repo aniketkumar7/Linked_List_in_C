@@ -145,6 +145,7 @@ void deletelast(void)
     }
 }
 
+// delete from specific position  in circular linkedlist
 
 void deletespecific(void)
 {
@@ -188,6 +189,8 @@ void deletespecific(void)
     }
 }
 
+// to display the linkedlist
+
 void display(void)
 {
     struct node *ptr;
@@ -205,6 +208,8 @@ void display(void)
             
     }
 }
+
+//main function
 
 int main()
 {
