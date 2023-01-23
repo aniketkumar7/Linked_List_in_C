@@ -118,6 +118,8 @@ void deletebeg(void)
     }    
 }
 
+// delete from last of circular linkedlist
+
 void deletelast(void)
 {
     struct node *Ptr, *Loc;
