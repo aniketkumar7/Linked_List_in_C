@@ -5,3 +5,5 @@ This repository contains the source code of Implementation of Linked List in C L
 1. Implementation of Simple Linked List.
 
 2. Implementation of Circular Linked List.
+
+3. Implementation of Doubly Linked list
