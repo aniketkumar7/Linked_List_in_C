@@ -176,7 +176,7 @@ void display(void)
 }
 
 
-
+// main function
 int main()
 {
     int a;
