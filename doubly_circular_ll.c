@@ -105,6 +105,7 @@ void insertspecific(void)
     }
 }
 
+// to delete from beginning of linked list
 void deletebeginning(void)
 {
     struct node *ptr;
@@ -129,7 +130,7 @@ void deletebeginning(void)
 }
 
 
-
+// to delete from last of the linked list
 void deletelast(void)
 {
     struct node *ptr, *loc;
@@ -157,7 +158,7 @@ void deletelast(void)
     }
 }
 
-
+// to delete from specific position in the linked list
 void deletespecific(void)
 {
     struct node *ptr, *loc;
@@ -204,7 +205,7 @@ void deletespecific(void)
     }
 }
 
-
+// to display the elements of the linked list
 void display(void)
 {
     struct node *ptr;
