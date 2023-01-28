@@ -8,6 +8,7 @@ struct  node
 };
 struct node *start = NULL, *last;
 
+
 // to insert in beginning of linked list
 void insertbeginning()
 {
@@ -29,6 +30,7 @@ void insertbeginning()
         last -> next = new;
     }
 }
+
 
 // to insert at last in the linked list
 void insertlast(void)
@@ -52,6 +54,7 @@ void insertlast(void)
         last = new;
     }
 }
+
 
 // to insert at specific postion in the linked list
 void insertspecific(void)
@@ -104,6 +107,7 @@ void insertspecific(void)
         }
     }
 }
+
 
 // to delete from beginning of linked list
 void deletebeginning(void)
@@ -158,6 +162,7 @@ void deletelast(void)
     }
 }
 
+
 // to delete from specific position in the linked list
 void deletespecific(void)
 {
@@ -205,6 +210,7 @@ void deletespecific(void)
     }
 }
 
+
 // to display the elements of the linked list
 void display(void)
 {
@@ -225,7 +231,7 @@ void display(void)
 }
 
 
-
+// main function
 int main()
 {
     int a;
