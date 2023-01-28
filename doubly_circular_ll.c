@@ -8,6 +8,7 @@ struct  node
 };
 struct node *start = NULL, *last;
 
+// to insert in beginning of linked list
 void insertbeginning()
 {
     struct node *new;
@@ -29,6 +30,7 @@ void insertbeginning()
     }
 }
 
+// to insert at last in the linked list
 void insertlast(void)
 {
      struct node *new;
@@ -51,6 +53,7 @@ void insertlast(void)
     }
 }
 
+// to insert at specific postion in the linked list
 void insertspecific(void)
 {
     struct node *ptr, *new;
