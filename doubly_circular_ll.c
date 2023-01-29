@@ -190,7 +190,7 @@ void deletespecific(void)
         }
         else
         {
-            for(i=0; i<pos -1; i++)
+            for(i=0; i<(pos -1); i++)
             {
                 loc = ptr;
                 ptr = ptr -> next;
