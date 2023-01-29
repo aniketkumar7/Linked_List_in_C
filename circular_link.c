@@ -164,7 +164,7 @@ void deletespecific(void)
             Last = NULL;
             free(ptr);
         }
-        else if (pos == 1 && Last != Last -> Next)
+        else if ((pos == 1) && (Last != Last -> Next))
         {
             Last -> Next = ptr -> Next;
             printf("%d is deleted\n", ptr -> info);
