@@ -195,7 +195,7 @@ void display(void)
 {
     struct node *ptr;
     if(Last == NULL)
-    printf("List is empty ");
+    printf("List is empty\n");
     else
     {
         ptr = Last -> Next;
