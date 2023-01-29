@@ -104,7 +104,7 @@ void deletebeg(void)
     struct node *Ptr;
     if (Last == NULL)
     {
-        printf(" Underflow ");
+        printf(" Underflow \n");
     }
     else
     {
