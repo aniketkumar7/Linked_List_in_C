@@ -150,37 +150,39 @@ void deletespecific(void)
     int i, pos;
     printf("Enter the position which you want to delete : ");
     scanf("%d", &pos);
-    if(Last == NULL)
-    printf("Underflow\n");
+    if (Last == NULL)
+        printf("Underflow\n");
     else
     {
-        ptr = Last -> Next;
-        if(Last == Last -> Next && pos == 1)
+        ptr = Last->Next;
+        if (Last == Last->Next && pos == 1)
         {
-            printf("%d is deleted\n", ptr -> info);
+            printf("%d is deleted\n", ptr->info);
             Last = NULL;
             free(ptr);
         }
-        else if ((pos == 1) && (Last != Last -> Next))
+        else if (pos == 1 && Last != Last->Next)
         {
-            Last -> Next = ptr -> Next;
-            printf("%d is deleted\n", ptr -> info);
+            Last->Next = ptr->Next;
+            printf("%d is deleted\n", ptr->info);
             free(ptr);
         }
         else
         {
-            for(i=1; i<= pos -1; i++)
+            for (i = 2; i <= pos; i++)
             {
                 loc = ptr;
-                ptr = ptr -> Next;
-                if(ptr == Last -> Next)
-                printf("List is small\n");
-                break;
+                ptr = ptr->Next;
+                if (ptr == Last->Next)
+                {
+                    printf("List is small\n");
+                    return;
+                }
             }
-            loc -> Next = ptr -> Next;
-            printf("%d is deleted\n", ptr ->info);
-            if(ptr == Last)
-            Last = loc;
+            loc->Next = ptr->Next;
+            printf("%d is deleted\n", ptr->info);
+            if (ptr == Last)
+                Last = loc;
             free(ptr);
         }
     }
