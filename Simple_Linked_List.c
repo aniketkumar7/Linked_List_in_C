@@ -151,9 +151,8 @@ void deletespecific(void)
             ptr = ptr->next;
             if (ptr == NULL)
             {
-                printf("Linked List is small");
-                printf("\n");
-                break;
+                printf("Linked List is small\n");
+                return;
             }
         }
         loc->next = ptr->next;
