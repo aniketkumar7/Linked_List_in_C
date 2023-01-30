@@ -56,47 +56,44 @@ void insertsp(void)
 {
     struct node *New, *Ptr;
     int pos, i;
-    New = (struct node *) malloc(sizeof (struct node));
-    printf("Enter the position of the node : ");
-    scanf("%d", &pos);
-    printf("Enter the value of the node : ");
-    scanf("%d", &New -> info);
-    if((pos == 1) && (Last == NULL))
-    {
-        Last = New;
-        New -> Next = Last;
-    }
-    else if((pos == 1 ) && (Last != NULL))
-    {
-        New -> Next = Last -> Next;
-        Last -> Next = New;
-    }
+    New = (struct node *)malloc(sizeof(struct node));
+    if (New == NULL)
+        printf("Overflow\n");
     else
     {
-        Ptr = Last -> Next;
-        for( i = 0; i < pos - 2; i++)
+        printf("Enter the position of the node : ");
+        scanf("%d", &pos);
+        printf("Enter the value of the node : ");
+        scanf("%d", &New->info);
+        if ((pos == 1) && (Last == NULL))
         {
-            Ptr = Ptr -> Next;
-            if(Ptr = Last -> Next)
-            {
-                printf("List is small\n");
-                return ;
-            }
-        }
-        if(Ptr == Last)
-        {
-            New -> Next = Last -> Next;
-            Last ->Next = New;
+            New->Next = New;
             Last = New;
+        }
+        else if ((pos == 1) && (Last != NULL))
+        {
+            New->Next = Last->Next;
+            Last->Next = New;
         }
         else
         {
-            New -> Next = Ptr ->Next;
-            Ptr ->Next = New;
-        }        
+            Ptr = Last->Next;
+            for (i = 2; i < pos; i++)
+            {
+                Ptr = Ptr->Next;
+                if (Ptr == Last->Next)
+                {
+                    printf("List is small\n");
+                    break;
+                }
+            }
+            New->Next = Ptr->Next;
+            Ptr->Next = New;
+            if(Ptr == Last)
+            Last = New;
+        }
     }
 }
-
 // delete from beginning of circular linkedlist 
 
 void deletebeg(void)
