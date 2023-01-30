@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <process.h>
 struct node
 {
     int info;
@@ -262,7 +261,6 @@ int main()
             printf("Enter the correct choice  \n");
         }
         printf("Enter y or Y for continue : ");
-        fflush(stdin);
         scanf("%s", &c);  
         printf("\n");
     }
