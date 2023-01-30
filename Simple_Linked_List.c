@@ -1,5 +1,3 @@
-//This is a C program of implementation of Simple Linked List
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <process.h>
@@ -76,21 +74,19 @@ void insertspeific(void)
         ptr->next = new;
     }
 }
-// delete from beginning of linked list
+// delete form beginning of linked list
 
 void deletebeginning(void)
 {
     struct node *ptr;
     if (start == NULL)
     {
-        printf("No element is present to delete");
-        printf("\n");
+        printf("No element is present to delete\n");
     }
     else
     {
         ptr = start;
-        printf("%d is deleted ", start->info);
-        printf("\n");
+        printf("%d is deleted\n", start->info);
         start = start->next;
         free(ptr);
     }
@@ -103,8 +99,7 @@ void deletelast(void)
     struct node *ptr, *loc;
     if (start == NULL)
     {
-        printf("List is empty");
-        printf("\n");
+        printf("List is empty\n");
     }
     else
     {
@@ -114,7 +109,7 @@ void deletelast(void)
             loc = ptr;
             ptr = ptr->next;
         }
-        printf("%d is deleted", ptr->info);
+        printf("%d is deleted\n", ptr->info);
         loc->next = NULL;
         printf("\n");
         free(ptr);
@@ -131,22 +126,20 @@ void deletespecific(void)
     scanf("%d", &pos);
     if (start == NULL)
     {
-        printf("Linked List is empty ");
-        printf("\n");
+        printf("Linked List is empty\n");
     }
     else if (pos == 1)
     {
         ptr = start;
         start = start->next;
-        printf("%d is deleted", ptr->info);
-        printf("\n");
+        printf("%d is deleted\n", ptr->info);
         free(ptr);
     }
     else
     {
+        ptr = start;
         for (i = 2; i <= pos; i++)
         {
-            ptr = start;
             loc = ptr;
             ptr = ptr->next;
             if (ptr == NULL)
@@ -156,8 +149,7 @@ void deletespecific(void)
             }
         }
         loc->next = ptr->next;
-        printf("%d is deleted ", ptr->info);
-        printf("\n");
+        printf("%d is deleted\n", ptr->info);
         free(ptr);
     }
 }
