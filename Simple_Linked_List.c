@@ -63,14 +63,13 @@ void insertspeific(void)
     else
     {
         ptr = start;
-        for (i = 1; i < (pos - 1); i++)
+        for (i = 2; i < pos; i++)
         {
             ptr = ptr->next;
             if (ptr == NULL)
             {
-                printf("Linked List is small");
-                printf("\n");
-                break;
+                printf("Linked List is small\n");
+                return;
             }
         }
         new->next = ptr->next;
