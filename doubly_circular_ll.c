@@ -82,7 +82,7 @@ void insertspecific(void)
     else
     {
         ptr = last -> next;
-        for(i=2; i<pos; i++)
+        for(i = 2; i < pos; i++)
         {
             ptr = ptr -> next;
             if(ptr == NULL)
@@ -190,7 +190,7 @@ void deletespecific(void)
         }
         else
         {
-            for(i=0; i<(pos -1); i++)
+            for(i=2; i<= pos; i++)
             {
                 loc = ptr;
                 ptr = ptr -> next;
