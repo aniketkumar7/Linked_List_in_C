@@ -263,7 +263,7 @@ int main()
             break;
 
             default:
-            printf("Enter the correct choice : ");
+            printf("Enter the correct choice \n ");
         }
         printf("Enter 10 for continue : ");
         scanf("%d", &c);
