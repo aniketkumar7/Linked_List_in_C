@@ -163,7 +163,7 @@ void display(void)
 {
     struct node *ptr;
     if (start == NULL)
-        printf("Linked List is empty : ");
+        printf("Linked List is empty\n ");
     else
     {
         ptr = start;
