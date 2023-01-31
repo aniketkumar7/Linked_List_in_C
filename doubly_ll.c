@@ -68,7 +68,7 @@ void insertspecific(void)
         {
             ptr = ptr -> next;
             if(ptr == NULL)
-            printf("List is small \n");
+            printf("List is small\n");
         }
         New -> next = ptr -> next;
         New -> prev = ptr;
@@ -231,7 +231,7 @@ int main()
             break;
 
         default:
-            printf("Enter the correct choice  \n");
+            printf("Enter the correct choice\n");
         }
         printf("Enter y or Y for continue : ");
         scanf("%s", &c);  
