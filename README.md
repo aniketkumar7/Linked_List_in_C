@@ -8,4 +8,4 @@ This repository contains the source code of Implementation of Linked List.
 
 3. Implementation of Doubly Linked List.
 
-4. Implementation of Doubly Circular Linked List in C.
+4. Implementation of Doubly Circular Linked List.
